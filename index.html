@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tamil Nadu Forest Department</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    header {
+      background: white;
+      padding: 10px;
+      border-bottom: 2px solid #ccc;
+      display: flex;
+      align-items: center;
+    }
+
+    header img {
+      height: 60px;
+    }
+
+    nav {
+      background: #418a44;
+      color: white;
+      padding: 10px;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 10px;
+      transition: background 0.3s;
+    }
+
+    nav a:hover {
+      background: #306232;
+      border-radius: 5px;
+    }
+
+    .main-image {
+      width: 100%;
+      height: auto;
+    }
+
+    .content {
+      padding: 20px;
+    }
+
+   
+    .calender {
+      background: #ffffff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      margin-top: 20px;
+       text-align:center;
+    }
+
+    .calender h4 {
+  animation: blinkColors 1s infinite;
+}
+
+@keyframes blinkColors {
+  0% {
+    color: red;
+  }
+  50% {
+    color: green;
+  }
+  100% {
+    color: red;
+  }
+}
+   /* Style for the button */
+   button {
+            background-color: #4CAF50; /* Green color */
+            color: white; /* White text */
+            padding: 10px 20px; /* Padding around text */
+            border: none; /* Remove default border */
+            border-radius: 5px; /* Rounded corners */
+            cursor: pointer; /* Show a pointer cursor on hover */
+            font-size: 16px; /* Font size */
+            margin-top: 10px; /* Space above the button */
+        }
+
+        button a {
+            color: white; /* White text for the link inside the button */
+            text-decoration: none; /* Remove underline from the link */
+        }
+
+        /* Hover effect for the button */
+        button:hover {
+            background-color: #45a049; /* Darker green on hover */
+        }
+
+    .about {
+      background: #ffffff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      margin-top: 20px;
+      }
+
+   /* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  padding: 20px;
+}
+
+.profiles-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns in each row */
+  gap: 40px; /* Increased gap between cards */
+  justify-items: center;
+  margin-top: 30px; /* Adding top margin for some space above */
+}
+
+.profile {
+  background-color: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 100%;
+}
+
+.profile-img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+h3 {
+  font-size: 1.2em;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+p {
+  font-size: 0.9em;
+  color: #666;
+  line-height: 1.4;
+}
+
+/* Add hover effect on profile */
+.profile:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+}
+
+/* Responsive Design for smaller screens */
+@media (max-width: 900px) {
+  .profiles-container {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns on medium screens */
+    gap: 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  .profiles-container {
+    grid-template-columns: 1fr; /* 1 column on small screens */
+    gap: 20px;
+  }
+}
+
+
+.profiles-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  justify-items: center;
+  margin-top: 30px;
+  background-color: #bceebf; /* Light blue background color */
+  padding: 20px; /* Some padding to keep the profiles away from the edges */
+  border-radius: 10px; /* Optional: to give the background a rounded corner */
+}
+
+
+.info-section {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.left-column {
+  width: 30%;
+  background-color: #e3f2fd; /* Light background for the left section */
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.left-column ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.left-column li {
+  padding: 12px;
+  margin-bottom: 8px;
+  cursor: pointer;
+  background-color: #418a44;
+  color: white;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.left-column li:hover {
+  background-color: #306232;
+}
+
+.right-column {
+  width: 65%;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.content-box {
+  display: none;
+}
+
+.content-box.active {
+  display: block;
+}
+
+
+/* Container for the colored box */
+.color-box {
+  width: 100%;
+  height: 300px;  /* Adjust the height as necessary */
+  background-color: #f0f0f0; /* Light gray background */
+  padding: 20px;  /* Some padding around the content */
+  border-radius: 8px;  /* Optional: rounded corners */
+  box-shadow: 0 4px 6px rgba(249, 245, 245, 0.1); /* Optional: shadow to give depth */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Text overlay */
+.text-overlay {
+  width: 100%;
+  height: 100%;
+  color: rgb(254, 254, 254);  /* Text color */
+  padding: 20px;
+  background-color: rgba(71, 243, 91, 0.804);  /* Optional: background behind text */
+  border-radius: 8px;
+}
+
+/* Paragraph styling */
+.text-overlay p {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.6;
+  margin: 0;
+}
+
+
+.helpline-container {
+      background-color: #f1f1f1;
+      color: #333;
+      padding: 20px;
+      text-align: center;
+      font-size: 1.2em;
+      border-top: 2px solid #2c6b2f;
+    }
+
+    .helpline-container h2 {
+      color: #2c6b2f;
+      font-size: 1.8em;
+      margin-bottom: 10px;
+    }
+
+    .helpline-container p {
+      font-size: 1.2em;
+      margin: 5px 0;
+    }
+
+    /* Responsive Design for smaller screens */
+    @media screen and (max-width: 600px) {
+      .helpline-container {
+        font-size: 1em;
+      }
+
+      .helpline-container h2 {
+        font-size: 1.5em;
+      }
+    }
+
+
+    .footer {
+      background: #eee;
+      padding: 10px;
+      text-align: center;
+      margin-top: 20px;
+    }
+    iframe {
+      width: 100%; 
+      height: 500px; 
+      border: none;  
+    }
+    .video-container {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+      max-width: 100%;
+      background: #000;
+    }
+    
+    .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+        align-items: flex;
+      }
+    }
+  </style>
+</head>
+<body onload="playvideo()">
+
+  <header>
+    <img src="D:\miniproject\imgvdo\tn_logo.png.png" >
+    <h1 style="margin-left: 20px;">Government of Tamil Nadu - Forest Department<br>
+      தமிழ்நாடு அரசு
+வனத்துறை
+    </h1>
+  </header>
+
+  <nav>
+    <a href="About_us.html">About Us</a>
+    <a href="organisation.html">Organization</a>
+    <a href="project.html">Projects & Programmes</a>
+     <a href="public.html">Public Information</a>
+    <a href="loginform.html">EDFA login</a>
+  </nav>
+  <div class="video-container">
+   
+    <video id="myVideo" width="100%" height="400px" autoplay muted controls>
+      <source src="D:\miniproject\imgvdo\forest video.mp4" type="video/mp4">
+      Your browser does not support HTML5 video.
+    </video>
+    </div>
+    <script>
+      function playVideo() {
+        var video = document.getElementById("myVideo");
+        video.play(); // Optional: in case some browsers don't auto play
+      }
+    </script>
+    
+  <div class="calender">
+   
+    <h4> Calender 2024 - Elephant Whisperers<br>
+  <button><a href="D:\miniproject\html\calender.html"> click here</a></button></h4>
+  </div>
+
+
+
+  <div class="content">
+    <div class="about">
+      <h2>About Us</h2><br>
+      <h4><strong>The Tamil Nadu Forest Department</strong> has completed a journey of more than 160 years. Since the formation of the Department in 1856, during the last sixteen decades Forest Department had witnessed many transformations.</h4><br>
+      <h4>The initiatives of the Department in the erstwhile Madras Presidency and in the Tamil Nadu State after independence were largely guided by the National Forest Policies of 1894,1952 and 1988 and Programmes supported mainly through fund allocations in the Five Year Plans.</h4>
+    </div>
+  </div>
+  <div class="profiles-container">
+    <!-- User Profile 1 -->
+    <div class="profile">
+      <img src="D:\miniproject\imgvdo\profile1.png" alt="Dr K. Ponmudy" class="profile-img">
+      <h3>Dr K. Ponmudy</h3>
+      <p>Hon'ble Minister for Forests</p>
+    </div>
+
+    <!-- User Profile 2 -->
+    <div class="profile">
+      <img src="D:\miniproject\imgvdo\profile2.png" alt="Tmt. Supriya Sahu, IAS" class="profile-img">
+      <h3>Tmt. Supriya Sahu, IAS</h3>
+      <p>Additional Chief Secretary to Government, Environment, Climate Change and Forests Department</p>
+    </div>
+
+    <!-- User Profile 3 -->
+    <div class="profile">
+      <img src="D:\miniproject\imgvdo\profile3.png" alt="Thiru. Srinivas R. Reddy, IFS" class="profile-img">
+      <h3>Thiru. Srinivas R. Reddy, IFS</h3>
+      <p>Principal Chief Conservator of Forests (HoFF), & CEO, CAMPA (FAC)</p>
+    </div>
+
+    <!-- User Profile 4 -->
+    <div class="profile">
+      <img src= "D:\miniproject\imgvdo\profile4.png"alt="Thiru. Vijendra Singh Malik, IFS" class="profile-img">
+      <h3>Thiru. Vijendra Singh Malik, IFS</h3>
+      <p>Principal Chief Conservator of Forests & Secretary Tamil Nadu Biodiversity Board</p>
+    </div>
+
+    <!-- User Profile 5 -->
+    <div class="profile">
+      <img src="D:\miniproject\imgvdo\profile5.png" alt="Selvi. Mita Banerjee, IFS" class="profile-img">
+      <h3>Selvi. Mita Banerjee, IFS</h3>
+      <p>Principal Chief Conservator of Forests (Research & Education)</p>
+    </div>
+
+    <!-- User Profile 6 -->
+    <div class="profile">
+      <img src="D:\miniproject\imgvdo\profile6.png" alt="Thiru. A. Udhayan, IFS" class="profile-img">
+      <h3>Thiru. A. Udhayan, IFS</h3>
+      <p>Principal Chief Conservator of Forests (AIWC)</p>
+    </div>
+
+    <!-- User Profile 7 -->
+    <div class="profile">
+      <img src="D:\miniproject\imgvdo\profile7.png" alt="Thiru Rakesh Kumar Dogra, IFS" class="profile-img">
+      <h3>Thiru Rakesh Kumar Dogra, IFS</h3>
+      <p>Principal Chief Conservator of Forests and Chief Wildlife Warden & Principal Chief Conservator of Forests (Project Tiger) (FAC) & Tamil Nadu Forests and Wildlife Crime Control Bureau(A/C)</p>
+    </div>
+
+    <!-- User Profile 8 -->
+    <div class="profile">
+      <img src="D:\miniproject\imgvdo\profile8.png"alt="Thiru. Debasis Jana, IFS" class="profile-img">
+      <h3>Thiru. Debasis Jana, IFS</h3>
+      <p>Principal Chief Conservator of Forests (Administration) & Principal Chief Conservator of Forests (Working Plan) (FAC)</p>
+    </div>
+
+    <!-- User Profile 9 -->
+    <div class="profile">
+      <img src="D:\miniproject\imgvdo\profile9.png" alt="Thiru I Anwardeen, IFS" class="profile-img">
+      <h3>Thiru I Anwardeen, IFS</h3>
+      <p>Principal Chief Conservator of Forests & Chief Project Director (TBGP)</p>
+    </div>
+  </div>
+
+  <!-- New Div Section before Footer -->
+  <div class="info-section">
+    <div class="left-column">
+      <ul>
+        <li onclick="showContent('forest-glance')">Forest at a Glance</li>
+        <li onclick="showContent('tn-state-profile')">TN State Profile</li>
+        <li onclick="showContent('tn-district-profile')">TN District Wise Profile</li>
+        <li onclick="showContent('tn-forest-types')">TN Forest Types</li>
+      </ul>
+    </div>
+    
+    <div class="right-column">
+      <div id="forest-glance" class="content-box">
+        <div class="color-box">
+          <div class="text-overlay">
+            <h3>Forest at a Glance</h3>
+            <p>The State Tamil Nadu has a spectrum of nine major forest types ranging from wet evergreen forest to moist deciduous, dry deciduous, sholas, grasslands, and scrub forest. The Western Ghats, the longest hill range in the State, is one of the 25 global hotspots of biodiversity and one of the three mega-centers of endemism in India.</p>
+          </div>
+        </div>
+      </div>
+      
+      <div id="tn-state-profile" class="content-box">
+        <div class="color-box">
+          <div class="text-overlay">
+            <h3>TN State Profile</h3>
+            <p>Forest Cover of the State is 26,419 sq.km which is 20.31% of the State’s geographical area. In terms of forest canopy density classes, the State has 3,593 sq.km (2.76 % of GA) very dense forest,  11,034 sq.km (8.48% of GA) moderately dense forest and open forest and 11,792 sq.km (9.07% of GA) respectively. There is an increase of 55.21 sq.km in the forest cover of the state as compared to the 2021 assessment.</p>
+          </div>
+        </div>
+      </div>
+      
+      <div id="tn-district-profile" class="content-box">
+        <div class="color-box">
+          <div class="text-overlay">
+            <h3>TN District Wise Profile</h3>
+            <p>District-wise forest cover shows districts like Erode (2,295.73 sq. km.), Coimbatore (1,985.04 sq. km), Dindigul (1,877.97 sq.km), Vellore (1,824.98 sq. km), The Nilgiris (1,731.38 sq.km) and Dharmapuri (1,702.71 sq.km) covers higher forest cover. The forest and tree cover of the State now is 30,843.23 sq km which constitutes 23.71% of the total geographical area of the State.</p>
+          </div>
+        </div>
+      </div>
+      
+      <div id="tn-forest-types" class="content-box">
+        <div class="color-box">
+          <div class="text-overlay">
+            <h3>TN Forest Types</h3>
+            <p>In Tamil Nadu, Forest vegetation is divided into 3 major groups according to temperature zones namely Tropical Forests, Montane Subtropical Forests, and Montane Temperate Forests, which are sub-divided into nine type groups based on moisture and physiognomic variation.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <script>
+    function showContent(contentId) {
+      // Hide all content boxes
+      var contentBoxes = document.querySelectorAll('.content-box');
+      contentBoxes.forEach(function(box) {
+        box.style.display = 'none';
+      });
+  
+      // Show the selected content box
+      var selectedContent = document.getElementById(contentId);
+      if (selectedContent) {
+        selectedContent.style.display = 'block';
+      }
+    }
+  
+    // Optional: Set the default display for the first content box when the page loads
+    document.addEventListener('DOMContentLoaded', function() {
+      showContent('forest-glance');  // Set default active content
+    });
+  </script>
+  
+  <div class="helpline-container">
+    <h2>24 x 7 Helpline</h2>
+    <p>For any inquiries, assistance, or emergencies, please contact:</p>
+    <p><strong>1800 425 4409</strong></p>
+    <p><strong>044 24323783</strong></p>
+    <p>We're here to help you anytime, anywhere.</p>
+  </div>
+
+  <div class="footer">
+    &copy; 2025 Tamil Nadu Forest Department | Designed for demo purposes by Akshaya K
+  </div>
+
+</body>
+</html>

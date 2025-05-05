@@ -1,0 +1,462 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>about us</title>
+
+
+
+<html>
+  <head>
+    <style>
+    .info-section {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 30px;
+    }
+    
+    .left-column {
+      width: 30%;
+      background-color: #e3f2fd;
+      padding: 20px;
+      border-radius: 8px;
+    }
+    
+    .left-column ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    
+    .left-column li {
+      padding: 12px;
+      margin-bottom: 8px;
+      cursor: pointer;
+      background-color: #418a44;
+      color: white;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+    
+    .left-column li:hover {
+      background-color: #306232;
+    }
+    
+    .right-column {
+      width: 65%;
+      padding: 20px;
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    
+    .content-box {
+      display: none;
+    }
+    
+    .color-box {
+      background-color: #f0f0f0;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(249, 245, 245, 0.1);
+    }
+    
+    .text-overlay {
+      color: black;
+      text-align: left;
+    }
+    <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    header {
+      background: white;
+      padding: 10px;
+      border-bottom: 2px solid #ccc;
+      display: flex;
+      align-items: center;
+    }
+
+    header img {
+      height: 60px;
+    }
+
+    nav {
+      background: #418a44;
+      color: white;
+      padding: 10px;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 10px;
+      transition: background 0.3s;
+    }
+
+    nav a:hover {
+      background: #306232;
+      border-radius: 5px;
+    }
+
+    .main-image {
+      width: 100%;
+      height: auto;
+    }
+
+    .content {
+      padding: 20px;
+    }
+
+   
+    .calender {
+      background: #ffffff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      margin-top: 20px;
+       text-align:center;
+    }
+
+    .calender h4 {
+  animation: blinkColors 1s infinite;
+}
+
+@keyframes blinkColors {
+  0% {
+    color: red;
+  }
+  50% {
+    color: green;
+  }
+  100% {
+    color: red;
+  }
+}
+
+    .about {
+      background: #ffffff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      margin-top: 20px;
+      }
+
+   /* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  padding: 20px;
+}
+
+.profiles-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns in each row */
+  gap: 40px; /* Increased gap between cards */
+  justify-items: center;
+  margin-top: 30px; /* Adding top margin for some space above */
+}
+
+.profile {
+  background-color: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 100%;
+}
+
+.profile-img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+h3 {
+  font-size: 1.2em;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+p {
+  font-size: 0.9em;
+  color: #666;
+  line-height: 1.4;
+}
+
+/* Add hover effect on profile */
+.profile:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+}
+
+/* Responsive Design for smaller screens */
+@media (max-width: 900px) {
+  .profiles-container {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns on medium screens */
+    gap: 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  .profiles-container {
+    grid-template-columns: 1fr; /* 1 column on small screens */
+    gap: 20px;
+  }
+}
+
+
+.profiles-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  justify-items: center;
+  margin-top: 30px;
+  background-color: #bceebf; /* Light blue background color */
+  padding: 20px; /* Some padding to keep the profiles away from the edges */
+  border-radius: 10px; /* Optional: to give the background a rounded corner */
+}
+
+
+.info-section {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.left-column {
+  width: 30%;
+  background-color: #e3f2fd; /* Light background for the left section */
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.content-box {
+  display: none;
+}
+
+.content-box.active {
+  display: block;
+}
+
+
+
+
+
+
+
+
+.helpline-container {
+      background-color: #f1f1f1;
+      color: #333;
+      padding: 20px;
+      text-align: center;
+      font-size: 1.2em;
+      border-top: 2px solid #2c6b2f;
+    }
+
+    .helpline-container h2 {
+      color: #2c6b2f;
+      font-size: 1.8em;
+      margin-bottom: 10px;
+    }
+
+    .helpline-container p {
+      font-size: 1.2em;
+      margin: 5px 0;
+    }
+
+    /* Responsive Design for smaller screens */
+    @media screen and (max-width: 600px) {
+      .helpline-container {
+        font-size: 1em;
+      }
+
+      .helpline-container h2 {
+        font-size: 1.5em;
+      }
+    }
+
+
+    .footer {
+      background: #eee;
+      padding: 10px;
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    
+    .video-container iframe {
+      position: relative;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+        align-items: flex;
+      }
+    }
+  </style>
+  </style>
+  </head>
+  <body>
+
+    <header>
+      <img src="D:\miniproject\imgvdo\tn_logo.png.png" >
+      <h1 style="margin-left: 20px;">Government of Tamil Nadu - Forest Department<br>
+        தமிழ்நாடு அரசு
+  வனத்துறை
+      </h1>
+    </header>
+  
+    <nav>
+      <a href="About_us.html">About Us</a>
+      <a href="#">Organization</a>
+      <a href="#">Projects & Programmes</a>
+      <a href="#">Legislations</a>
+      <a href="#">Public Information</a>
+     
+    </nav>
+<div class="info-section">
+  <div class="left-column">
+    <ul>
+      <li onclick="showContent('present')">Present</li>
+      <li onclick="showContent('past')">Past</li>
+    </ul>
+  </div>
+  
+  <div class="right-column">
+    <!-- Present Content -->
+    <div id="present" class="content-box" style="display: none;">
+      <div class="color-box">
+        <div class="text-overlay">
+          <h1>PRESENT</h1>
+          <p>Forests provide the basic life support system to all the living entities of mother earth including mankind. Forest ecosystems provide fresh air, water resources, fertile soil and agriculture, bio-diversity and environment. Vast sections of rural society, including a majority of the tribal, are directly dependent on forests for their livelihood. Forest degradation will have adverse impact on these life supporting systems. The Government of Tamil Nadu recognizes the prospects of a balanced ecosystem in advancing the socio-economic development of the State. The pursuance of policy of environmental stability mandating afforestation and biodiversity conservation through people’s movement has led to Tamil Nadu registering an increase of 2501 sq.km of Forest Cover which is the maximum among all the States in the country for the period 2013-15 (Government of India, Forest Survey of India Report, 2015). The achievement is quite significant keeping in view the continuous challenge faced by the Forest department because of increasing population pressure on the forest resources.</p>
+          
+          <p>Tamil Nadu has been a pioneer State in the Biodiversity conservation particularly in Protected Area management, including conservation and improvement of terrestrial/ marine flora and fauna. The State’s sincere efforts in establishing range of Tiger habitats in Western and Eastern Ghats of Tamil Nadu have resulted in the increase of tiger numbers from 163 in 2011 assessment to 229 in 2014 as per “Status of Tiger” report jointly published by the National Tiger Conservation Authority and the Wildlife Institute of India in 2015.</p>
+          
+          <p>The United Nations Sustainable Development Summit adopted an action plan in 2015 for people, planet and prosperity and framed seventeen Sustainable Development Goals (SDGs). The SDGs are a UN Initiative and are universally acceptable goals that balance three dimensions of Sustainable Development, namely, Environmental, Social, and Economic.</p>
+          
+          <p>The Government of Tamil Nadu continues to be equally concerned about vulnerability of natural resources on account of climate change and is committed to sustainably manage, enhance the forests and wildlife on scientific principles, while meeting the livelihood needs of the forest dependent communities.</p>
+          
+          <h3>VISION OF THE DEPARTMENT</h3>
+          <p>The Twelfth Five Year Plan for the State of Tamil Nadu encompasses preservation of entire ecological footprint of human activity and includes increasing the forest cover, protection of wetlands, conserving groundwater, rivers and other water bodies, protection of the coastal zones including fragile ecosystems, conservation of the zoological and botanical diversity of the State. The initiatives of the Department are in line with the Late Hon’ble Chief Minister’s Vision Tamil Nadu 2023 to maintain the ecological balance across the State.</p>
+
+          <h3>NATIONAL FOREST POLICY, 1988</h3>
+          <p>In National Forest Policy, 1988, detailed guidelines have been framed for the preservation and management of forests in the country. The principal aim of this Policy is to ensure environmental stability and maintenance of ecological balance including atmospheric equilibrium, which is vital for sustenance of all life forms, human, animals and plants.</p>
+
+          <h3>OBJECTIVES OF FOREST MANAGEMENT</h3>
+          <ul>
+            <li>Biodiversity and genetic resource conservation by protection of forests and wildlife.</li>
+            <li>Augmentation of water resources in forest areas.</li>
+            <li>Rehabilitation and restoration of degraded forests for improvement of forest cover.</li>
+            <li>Enhancing tree cover outside forests for livelihood security and climate change mitigation.</li>
+            <li>Welfare of tribal and forest fringe communities to ensure economic prosperity and ecological stability.</li>
+          </ul>
+
+          <h3>STATEMENT OF SERVICES PROVIDED</h3>
+          <p>The Forest department provides the services to support:
+            <ul>
+              <li>Afforestation, soil and water conservation, land use planning, wildlife preservation, tree cultivation in private lands, urban afforestation and forestry extension;</li>
+              <li>Programmes, which attempt in arriving at appropriate solutions to environmental problems and to regenerate environmental natural resources;</li>
+              <li>Research in the areas of sustainable management of forest eco-system and technology to mitigate problems arising from degradation of environment;</li>
+              <li>Programmes for improving the quality of life of the people living below the poverty line;</li>
+              <li>Tribal development;</li>
+              <li>Forest protection, forest consolidation and infrastructure development in forest areas.</li>
+            </ul>
+          </p>
+
+          <h3>LEGAL FRAMEWORK</h3>
+          <p>Some of the Acts and Rules that are enforced in the State for protection and management of forests are as follows:</p>
+          <h4>Acts</h4>
+          <ul>
+            <li>Tamil Nadu Forest Act, 1882</li>
+            <li>Tamil Nadu Preservation of Private Forests Act, 1949</li>
+            <li>Tamil Nadu Hill Areas (Preservation of Trees) Act, 1955</li>
+            <li>Wildlife Protection Act, 1972</li>
+            <li>Forest Conservation Act, 1980</li>
+            <li>Tamil Nadu Rosewood Trees (Conservation) Act, 1994</li>
+          </ul>
+          <h4>Rules</h4>
+          <ul>
+            <li>Tamil Nadu Sandalwood Transit Rules, 1967</li>
+            <li>Tamil Nadu Timber Transit Rules, 1968</li>
+            <li>Tamil Nadu Sandalwood Possession Rules, 1970</li>
+            <li>Tamil Nadu Maintenance of Accounts in respect of Scheduled Timber for Industrial or Commercial Purposes Rules, 1988</li>
+            <li>Tamil Nadu Patta Sandalwood Rules, 2008</li>
+            <li>Tamil Nadu Regulation of Wood Based Industries Rules, 2010</li>
+          </ul><br>
+
+          <h3>A SHORT NOTE ON SANDAL TREES IN TAMIL NADU</h3>
+          <p>Naturally grown sandalwood trees are found in the Eastern Ghats of Vellore, Javvadhi hills of Tiruvannamalai, Chitteri hill areas in Dharmapuri, Shervaroy, Bhodamalai and Kolli hills of Salem district, Pachamalai hill areas in Trichy and forest areas of Erode district. At present, meagre number of matured trees is available for extraction in these areas and a few hundreds of naturally grown sandalwood trees are there in Amirdhi and Kavaloor in Javadhi hills. Action is being taken to protect these trees from destruction and saved as mother trees for collection of seeds.
+
+            Oil is available only in the sandalwood heartwood. Perfumeries, medicines, etc. are prepared from the sandalwood oil. Various types of beautiful artistic toys are manufactured from the heartwood. Further it has been utilized for devotional purpose.
+            
+            As the price of sandalwood oil is on the increase in the international market, sandalwood trees of Tamil Nadu were virtually destroyed by smuggling the sandalwood to the neighbouring States for years together. At present, small size seedling and saplings are found in patches in the naturally grown sandalwood areas.There is a possibility of harvesting sandalwood trees after 20 or 30 years, if they protected well.</p> <!-- Continue the same pattern for the rest of the content you provided -->
+        </div>
+      </div>
+    </div>
+    
+    <!-- Past Content -->
+    <div id="past" class="content-box" style="display: none;">
+      <div class="color-box">
+        <div class="text-overlay">
+          <h1>PAST</h1>
+          <p>
+            Tamil Nadu is endowed with rich natural and cultural heritage. First systematic attempt in exploiting the timber, mainly teak from the Madras Presidency’s forests commenced in the first decade of 19th century with the appointment of Watson as the Conservator. Though the forest exploitation continued for half a century thereafter without a formal administrative arrangement, it was only in 1856 Forest Department was formed in the Presidency with the appointment of Dr. Cleghorn as its Conservator of Forests. With Dr. Brandis, a trained forester, at the helm as India’s first Inspector General of Forests, formation of a forest organization in the Union and in all Presidencies was pursued in right earnest. Unabated harvest of timber trees, initial attempts in regeneration of felled areas, reservation of forests as Government property under the provisions of the Madras Forest Act, 1882, were the main developments in the second half of 19th century.<br>
+            
+           <br>
+
+
+            The management principles followed by the British foresters aimed to obtain maximum yield of forest produce and surplus forest revenue to the State. Commencement of scientific forestry received an impetus with the introduction of a system of preparation of comprehensive Working Plans for divisions in the early 20th century. The first National Forest Policy 1894 continued to be the basis for forest management in the Presidencies till the country’s independence. A bold attempt of placing nearly one sixth of the Madras Presidency’s forests with Forest Panchayats in the 1920s proved disastrous sand such forests had to be handed back to the Forest department around independence in a much depleted State. Forest management after independence broadly relied on the 1952 National Policy. On the State’s reorganization on linguistic basis in the mid-1950s, large parts of timber forests went to Karnataka and Kerala. The quality of major portion of forest capital left with Madras State needed to be improved though regeneration efforts that received fund support from the Five Year Plan allocations. Despite being a major non-tax revenue earning sector, Forest department put a halt to its timber harvest and fuel coupe operations in the mid 1980s paving way for the beginning of conservation forestry.<br>
+            
+           <br>
+
+
+            This period coincided with the promulgation of the third National Forest Policy in 1988 that laid emphasis on the role of forests in providing ecological security and on people-inclusive forest management. The State took major initiatives which produced positive results in eco-restoration of State’s degraded forests, besides significant improvement in the livelihoods of forest dwelling and forest fringe communities. These are reflected in the biennial assessment of Forest and tree cover by the Forest Survey of India. In the sphere of wildlife conservation too, the State has achieved important milestones with sizeable addition to the Protected Area network and continuous increase in the population of many flagship species.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  function showContent(contentId) {
+  // Hide all content boxes
+  var contentBoxes = document.querySelectorAll('.content-box');
+  contentBoxes.forEach(function(box) {
+    box.style.display = 'none'; // Hides all the content
+  });
+
+  // Show the selected content box
+  var selectedContent = document.getElementById(contentId);
+  selectedContent.style.display = 'block'; // Shows the clicked content
+}
+
+ // Optional: Set the default display for the first content box when the page loads
+ document.addEventListener('DOMContentLoaded', function() {
+      showContent('present');  // Set default active content
+    });
+</script>
+</body>
+</html>

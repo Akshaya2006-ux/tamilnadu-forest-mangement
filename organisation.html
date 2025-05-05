@@ -1,0 +1,201 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tamil Nadu Forest Department</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      background: #f4f9f4;
+    }
+    
+    header {
+      background: white;
+      padding: 10px;
+      border-bottom: 2px solid #ccc;
+      display: flex;
+      align-items: center;
+    }
+
+    header img {
+      height: 60px;
+    }
+
+    nav {
+      background: #418a44;
+      color: white;
+      padding: 10px;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 10px;
+      transition: background 0.3s;
+    }
+
+    nav a:hover {
+      background: #306232;
+      border-radius: 5px;
+    }
+
+    .sidebar {
+      width: 250px;
+      background: #2f4f2f;
+      color: white;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      padding-top: 20px;
+    }
+
+    .sidebar button {
+      background: none;
+      border: none;
+      color: white;
+      padding: 15px 20px;
+      text-align: left;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .sidebar button:hover,
+    .sidebar button.active {
+      background-color: #4b704b;
+    }
+
+    .content {
+      flex: 1;
+      padding: 30px;
+      overflow-y: auto;
+      background: #fff;
+      box-shadow: inset 5px 0 15px rgba(0, 0, 0, 0.05);
+    }
+
+    .tab-content {
+      display: none;
+      animation: fadeIn 0.3s ease-in;
+    }
+
+    .tab-content.active {
+      display: block;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    h1 {
+      color: #2f4f2f;
+    }
+  </style>
+</head>
+<body>
+
+
+    <div class="sidebar">
+        <button class="tab-button active" onclick="showTab(event, 'campa')">CAMPA</button>
+        <button class="tab-button" onclick="showTab(event, 'it')">Information Technology</button>
+        <button class="tab-button" onclick="showTab(event, 'biodiversity')">Biodiversity</button>
+      
+        <button class="tab-button" onclick="showTab(event, 'working')">Working Plan</button>
+    </div>
+
+    <div class="content">
+        <div id="campa" class="tab-content active">
+            
+
+<h1>Compensatory Afforestation Management and Planning Authority (CAMPA)</h1>
+<p>The Forest (Conservation) Act, 1980 has succeeded in controlling the indiscriminate release of forest land for non-forestry purposes. Prior to 1980, the rate of diversion of forest lands for non-forestry purposes was about <span class="highlight">1.43 lakh ha</span> per annum. However, with the advent of the Forest (Conservation) Act, 1980, the rate of diversion of forest lands has reduced to around <span class="highlight">15,000 ha</span> per annum, with most diversions allowed for developmental needs such as:</p>
+<ul>
+  <li>Drinking water projects</li>
+  <li>Irrigation projects</li>
+  <li>Transmission lines</li>
+  <li>Railway lines</li>
+  <li>Roads, Power projects, and more</li>
+</ul>
+
+<p>For such diversions of forest lands, compensatory afforestation is stipulated, along with catchment area treatment plans, wildlife habitat improvement plans, rehabilitation plans, etc. These measures aim to mitigate the adverse effects of diverting large areas of green forests.</p>
+
+<h2>Establishment of CAMPA</h2>
+<p>To monitor the effective implementation of compensatory afforestation in the country, an authority named "Compensatory Afforestation Management and Planning Authority (CAMPA)" has been constituted at the national level. A monitoring cell has also been set up in the Ministry of Environment & Forests to oversee proposals at various stages and ensure compliance with forestry clearance conditions by the user agencies.</p>
+
+<h2>State Advisory Groups (SAGs)</h2>
+<p>The State Advisory Groups (SAGs), constituted by the Ministry of Environment & Forests under the Forest (Conservation) Act, 1980, meet according to a set timetable. If a meeting date coincides with a government holiday, the meeting is rescheduled for the next working day. The senior-most Conservator of Forests/Deputy Conservator of Forests of the Regional Office acts as the Chairperson in the absence of the Chief Conservator of Forests/Conservator of Forests. The Nodal Officer of the State acts as the Member-Secretary of the concerned SAG.</p>
+
+
+
+
+        <div id="it" class="tab-content">
+            <h1>IT WING AT A GLANCE</h1>
+    
+            <h2>Introduction</h2>
+            <p>Forestry involves vast database on human resource development, land based information, project related activities, products and services, research and extension and public utilities. The use of Information Technology has come to play a vital role in planning, management, and monitoring in the forestry sector. The IT wing of the Tamil Nadu Forest Department makes the best use of computer hardware and software to assist forestry activities. In order to speed up the administrative function through data collection, storage and dissemination activities, Tamil Nadu Forest Department has been computerized up to the level of Ranges, which are the basic unit of administrative set up. IT utility has been taken up to the level of basic unit of administrative set up of the Tamil Nadu Forest Department.</p>
+        
+            <h2>GIS and GPS Integration</h2>
+            <p>GIS is an excellent tool for the proper assessment, planning, and management of forest resources. The IT wing of TNFD is at the forefront in the use of Geographical Information Science. The personnel in the Tamil Nadu Forest Department receive hands-on training in computer operation, techniques of Geographical Information System (GIS) and Global Positioning System (GPS) through the State-of-the-Art computer centres in Tamil Nadu Forest Academy, Coimbatore, and Tamil Nadu Forestry Training College, Vaigai Dam.</p>
+            
+            <h2>Collaboration and Data Usage</h2>
+            <p>With the collaboration of Forest Survey of India, Dehradun and National Remote Sensing Centre, Hyderabad, satellite and other relevant data are obtained, analysed, and results are arrived at which are largely utilized for the management of forests.</p>
+        </div>
+        
+
+        <div id="biodiversity" class="tab-content">
+          
+            <h1>TAMIL NADU – LAND OF RICH BIODIVERSITY</h1>
+    
+            <p>Tamil Nadu, the southernmost State of the Indian peninsula, is spread over 1,30,058 sq.km land mass and accounts for about 4% of the total area of the country. It lies between 8° 05' and 13° 34' North latitudes and 76° 14' and 80° 21' East longitudes. The topography of Tamil Nadu broadly consists of the coastal plains in the east, uplands, and hills as one proceeds westwards. The central plains account for more than half the area of the State. The geographical area of the State has a roughly rhomboidal appearance with the longer diagonal of it stretching from Pulicat Lake in the north to Kanniyakumari in the south, and the shorter diagonal from Gudalur in the west to Point Calimere in the east.</p>
+        
+            <p>Tamil Nadu is endowed with rich biodiversity, right from marine coastal systems in the Gulf of Mannar to terrestrial evergreen forests in the Western Ghats. Tamil Nadu shares the Western Ghats with the States of Kerala, Karnataka, Goa, Maharashtra, and Gujarat. It shares the Eastern Ghats with the States of Andhra Pradesh and Orissa.</p>
+        
+            <h2>Pioneers in Search of the Presidency Flora</h2>
+            <p>The botanical description of the Presidency's vegetation owes much to the hard and dedicated work of a few explorers, some of whom served as early foresters here. J. S. Gamble was requested to undertake the preparation of a Flora of the Presidency of Madras in 1912, a task for which he was remarkably well-qualified owing to the exceptional knowledge of the flora he had acquired during his long service in the Presidency as Conservator of Forests. During the course of his extensive and careful tours, he made a very complete collection of plants of the Presidency, formed and maintained a private herbarium, which he subsequently presented to the Royal Botanical Gardens at Kew, England.</p>
+        
+            <p>The first part of the 'Flora of the Presidency of Madras' (Ranunculaceae to Opiliaceae), consisting of 200 pages, was published in November 1915. The draft of the botanical portion of the first 132 pages was prepared by S. T. Dunn, as explained by Gamble in his introduction to this part, since Gamble had not at that time completed his Malayan work. The remainder of this part and the editing of the whole, as well as the preparation of Parts II to VII inclusive, were undertaken entirely by Gamble. Part II was published in 1918 and was followed by Part III in 1919, and Parts IV, V, VI, and VII in 1921, 1923, 1924, and 1925, respectively. This mammoth task could not be completed in the lifetime of Gamble, and Part VII was published very shortly after his death on October 16th, 1925. Publication of this part carried the compilation of this work to the end of the Euphorbiaceae.</p>
+        
+            <p>With the consent of the Government of India and Mrs. Gamble, further continuation of the 'Flora' was entrusted to C. E. C. Fischer, who was also formerly a member of the Imperial Forest Service and the then Assistant for India at the Kew Gardens. With many years of experience in the Presidency and his exceptional knowledge of the flora, Fischer took on the onerous task of publication. Parts VIII, IX, and X were completed in 1928, 1931, and 1934, respectively.</p>
+        
+        </div>
+
+
+        <div id="working" class="tab-content">
+         
+
+            <h1>WORKING PLAN - வனச் செயல் திட்டம்</h1>
+    
+            <h2>WORKING PLAN</h2>
+            <p>Working Plan is a tool for scientific management of forests and is extremely useful in evaluating the status of forest resources, assessing the impact of past management practices and deciding about suitable management interventions for the future. The practice of systematic management planning of the forests in India was established in the colonial period through a written statement of prescriptions titled as "Working or Management Plan (WP)" for a fixed period, generally for 10 years in the post-independent period. The concept of "sustained yield" though a limited version of sustainability, finds mention in almost every Working Plan of the country.</p>
+            
+            <p>All forests are to be sustainably managed under the prescription of the working plan / scheme. The National Forest Policy clearly states "No forest should be permitted to be worked without an approved Working Plan by the competent authority".</p>
+            
+            <h2>The National Working Plan Code</h2>
+            <p>To sustainably manage, conserve and utilize the forest resources and to bring uniformity in forest management planning across the country, Ministry of Environment and Forests, Government of India adopted a uniform code, the National Working Plan Code in 2004.</p>
+        
+            <p>As there has been a paradigm shift in the approach to environmental stability, biodiversity monitoring and management, restoration of ecological balance of the disturbed areas, protective functions of the resources and socio-economic benefits based on non-timber forest products (NTFPs), the revised National Working Plan Code 2014 has been formulated and enforced from 01.04.2014, to address the aspects related to climate change, biodiversity conservation, use of geospatial techniques, soil and water management, revitalization of rural economy on forest fringe, sustainable management of forests and peoples' participation, etc.</p>
+        
+            <p>Systematic grid-based forest inventory provided in the Code takes care of valuable baseline information for change matrix monitoring and analysis and better scientific and sustainable management of the country's forests.</p>
+        </div>
+    </div>
+
+    <script>
+        function showTab(event, id) {
+            const buttons = document.querySelectorAll('.tab-button');
+            const tabs = document.querySelectorAll('.tab-content');
+
+            buttons.forEach(btn => btn.classList.remove('active'));
+            tabs.forEach(tab => tab.classList.remove('active'));
+
+            document.getElementById(id).classList.add('active');
+            event.target.classList.add('active');
+        }
+    </script>
+</body>
+</html>

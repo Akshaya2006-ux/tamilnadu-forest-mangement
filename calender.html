@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Download with Image</title>
+    <style>
+       body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    header {
+      background: white;
+      padding: 10px;
+      border-bottom: 2px solid #ccc;
+      display: flex;
+      align-items: center;
+    }
+
+    header img {
+      height: 60px;
+    }
+
+    nav {
+      background: #418a44;
+      color: white;
+      padding: 10px;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 10px;
+      transition: background 0.3s;
+    }
+
+    nav a:hover {
+      background: #306232;
+      border-radius: 5px;
+    }
+        .download-section {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .download-section img {
+            width: 200px;
+            height: auto;
+            margin-bottom: 10px;
+        }
+        .download-section a {
+            font-size: 16px;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .download-section a:hover {
+            background-color: #45a049;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .image-container {
+            width: 100%;
+            height: 80%; /* Makes the image take up 80% of the screen height */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+        .image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Ensures the image covers the container without distortion */
+        }
+        .download-button {
+            margin-top: 20px;
+            font-size: 18px;
+            padding: 15px 30px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .download-button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+  <header>
+    <img src="D:\miniproject\imgvdo\tn_logo.png.png" >
+    <h1 style="margin-left: 20px;">Government of Tamil Nadu - Forest Department<br>
+      தமிழ்நாடு அரசு
+வனத்துறை
+    </h1>
+  </header>
+
+  <nav>
+    <a href="About_us.html">About Us</a>
+    <a href="#">Organization</a>
+    <a href="#">Projects & Programmes</a>
+    <a href="#">Legislations</a>
+    <a href="#">Public Information</a>
+   
+  </nav>
+  <div class="container">
+    <!-- Image container -->
+    <div class="image-container">
+  
+        <!-- Image to show above the link -->
+        <img src= "D:\miniproject\imgvdo\calender.png" alt="Image for Download">
+        
+        <!-- PDF download link -->
+        <a href="D:\miniproject\imgvdo\elephant calender.pdf" download="calender.pdf" class="download-button">
+            Download PDF
+        </a>
+    </div>
+</div>
+</body>
+</html>
